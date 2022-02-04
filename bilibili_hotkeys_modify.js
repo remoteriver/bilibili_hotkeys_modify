@@ -49,7 +49,7 @@ const keyDownHandler = (event) => {
     //
     if(x == 13){
         console.log(x + " pressed")
-        var fullScreen = document.querySelector('.webfullscreen')//webfullscreen
+        var fullScreen = document.querySelector('.mode-fullscreen')//webfullscreen
         if(fullScreen) event.stopPropagation()
         var btn = document.querySelector('.bilibili-player-video')
         if(btn) btn.click()

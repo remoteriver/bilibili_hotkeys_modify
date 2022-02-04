@@ -42,8 +42,16 @@ const main = () => {
 
 const keyDownHandler = (event) => {
     var x = event.keyCode
-    if(x == 38 || x==40)
+    // up & down
+    if(x == 38 || x==40){
         event.stopPropagation()
+    }
+    //
+    if(x == 13){
+        console.log(x + " pressed")
+        var btn = document.querySelector('.squirtle-video-start') ?? document.querySelector('.bilibili-player-video-btn-start')
+        btn.click()
+    }
 }
 
 main()

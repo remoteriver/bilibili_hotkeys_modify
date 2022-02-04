@@ -49,7 +49,7 @@ const keyDownHandler = (event) => {
     //
     if(x == 13){
         console.log(x + " pressed")
-        var btn = document.querySelector('.squirtle-video-start') ?? document.querySelector('.bilibili-player-video-btn-start')
+        var btn = document.querySelector('.bilibili-player-video-btn-start')
         btn.click()
     }
 }

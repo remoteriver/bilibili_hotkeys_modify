@@ -51,7 +51,7 @@ const keyDownHandler = (event) => {
         console.log(x + " pressed")
         var fullScreen = document.querySelector('.mode-fullscreen')//webfullscreen
         if(fullScreen) event.stopPropagation()
-        var btn = document.querySelector('.bilibili-player-video')
+        var btn = document.querySelector('.squirtle-video-start') ?? document.querySelector('.bilibili-player-video-btn-start')
         if(btn) btn.click()
     }
 }
